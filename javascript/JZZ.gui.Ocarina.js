@@ -15,10 +15,6 @@
   if (!JZZ.gui) JZZ.gui = {};
   if (JZZ.gui.Ocarina) return;
 
-  /* istanbul ignore next */
-  function nop() {}
-  var _noBtn = { on: nop, off: nop, disable: nop, title: nop, div: {} };
-
   function Ocarina() {
   }
 
