@@ -15,7 +15,19 @@
   if (!JZZ.gui) JZZ.gui = {};
   if (JZZ.gui.Ocarina) return;
 
-  function Ocarina() {
+  function Dot(x, y, r, t) {
+    this.x = x;
+    this.y = y;
+    this.r = r;
+  }
+  const _dots = [[0, 0, 0.1]];
+
+  function Ocarina(w) {
+    var i;
+    if (!w) w = {};
+    if (!w.dots) w.dots = _dots;
+    this.dots = [];
+    for (i = 0; i < w.dots.length; i++) this.dots.push();
   }
 
   JZZ.gui.Ocarina = Ocarina;
